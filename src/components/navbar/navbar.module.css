@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  padding: 30px;
+}
+
+.navbar > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar > div:first-child > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar > div a {
+  color: #fffef2;
+  margin: 0px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Suisse Regular, sans-serif;
+}
+
+.navbar > div:first-child > div:last-child a:last-child {
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.topNotification {
+  background-color: #252525;
+  margin: auto;
+  padding: 10px;
+}
+
+.topNotification > div {
+  width: max-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px 1px 10px;
+  border-bottom: 1px solid #252525;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.topNotification > div:hover {
+  border-bottom: 1px solid #fffef2;
+  transition: 0.2s;
+}
+
+.topNotification > div > p {
+  color: #fffef2;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Suisse Regular, sans-serif;
+}
+
+.topNotification > div > p:first-child {
+  margin-right: 20px;
+}
+
+.smallNavbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffef2;
+  padding: 20px 5px 20px 10px;
+}
+
+.smallNavbar > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallNavbar > div a {
+  color: #333333;
+  margin: 0px 15px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Suisse Regular, sans-serif;
+  cursor: pointer;
+}
+
+.smallNavbar > div a:nth-child(3) {
+  font-size: 15px;
+}
+
+.smallNavbar > img {
+  width: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* responsive css below */
+
+@media all and (max-width: 1300px) {
+  .navbar > div a {
+    margin: 0px 10px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .navbar > div:first-child > div:first-child {
+    display: none;
+  }
+
+  .topNotification > div {
+    width: 100%;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .topNotification > div:hover {
+    border: none;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .smallNavbar {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+  }
+}

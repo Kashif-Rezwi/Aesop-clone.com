@@ -1,0 +1,24 @@
+.section09 {
+  padding: 150px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section09 > div {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section09 > div > h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.section09 > div > p {
+  margin: 20px;
+  font-weight: 500;
+}

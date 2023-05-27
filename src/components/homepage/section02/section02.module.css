@@ -1,0 +1,15 @@
+.section02 {
+  padding: 50px 0px 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .section02 {
+    padding: 100px 0px 20px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .section02 {
+    padding: 60px 0px 20px;
+  }
+}
